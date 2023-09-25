@@ -1,5 +1,15 @@
-require 'capybara/cucumber'
+#a gem cucumber reseta a sessão a cada cenário
+#require 'capybara/cucumber'
+require 'capybara'
+require 'capybara/dsl'
+require 'capybara/rspec/matchers'
 require 'selenium-webdriver'
+
+#deixar o DSL e RSPEC global para rodar end to end , onde um cenário depende do outro 
+World(Capybara::DSL)
+World(Capybara::RSpecMatchers)
+
+
 
 
 Capybara.configure do |config|
