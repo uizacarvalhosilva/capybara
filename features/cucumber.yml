@@ -1,9 +1,0 @@
-## YAML Templatesss
-
-___
-default: -p html
-pretty: --formats pretty
-homolog: AMBIENTER=homolog
-production: AMBIENTER=producao
-firefox: BROWSERS-chrome
-html: --format html --out=reports/relatiorio.html

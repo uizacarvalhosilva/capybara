@@ -1,0 +1,16 @@
+## YAML Templatesss
+
+---
+#rodar no ambiente de homologação ou producao
+default: --profile progress -p homolog -p ie
+
+pretty: --format pretty
+progress: --format progress
+homolog: AMBIENTE=homolog
+producao: AMBIENTE=producao
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+safari: BROWSER=safari
+ie: BROWSER=ie
+poltergeist: BROWSER=poltergeist
+##html: --format html --out=reports/relatiorio.html
